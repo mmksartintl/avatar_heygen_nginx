@@ -15,17 +15,17 @@ apt-get update && apt-get install nginx
 
 1) create heygen file with nginx config
 
-cd /etc/nginx/sites-available
+cd /etc/nginx/sites-available  
 cat >heygen (copy template from repo)
 
 2) create symlink
 
-cd /etc/nginx/sites-enabled
+cd /etc/nginx/sites-enabled  
 ln -s /etc/nginx/sites-available/heygen heygen
 
 3) test and reload nginx
 
-nginx -t
+nginx -t  
 nginx -s reload
 
 ------
